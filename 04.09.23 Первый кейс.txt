@@ -79,4 +79,5 @@ public class MyMath {
         cos330 = (11 * PI) / 5;
         cos360 = 2 * PI;
     }
+*/
 }
