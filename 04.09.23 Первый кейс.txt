@@ -1,0 +1,81 @@
+package org.example;
+
+public class MyMath {
+    public static final double E = 2.718281828459045;
+    public static final double PI = 3.141592653589793;
+    private int b;
+    private int a;
+    private double cos0;
+    private double cos30;
+    private double cos45;
+    private double cos60;
+    private double cos90;
+    private double cos120;
+    private double cos135;
+    private double cos150;
+    private double cos180;
+    private double cos210;
+    private double cos225;
+    private double cos240;
+    private double cos270;
+    private double cos300;
+    private double cos315;
+    private double cos330;
+    private double cos360;
+
+    public static void max(int a, int b) {
+        int maximum = a;
+        if (b > a) {
+            maximum = b;
+        }
+        System.out.println(maximum);
+    }
+
+    public static void random(final int min, final int max) {
+        final int rnd = rnd(min, max);
+
+        System.out.println("Cлучайное целое число: " + rnd);
+    }
+
+    public static int rnd(int min, int max) {
+        max -= min;
+        return (int) (Math.random() * ++max) + min;
+    }
+
+    public void cosinus(double cos0, double cos30, double cos45, double cos60, double cos90, double cos120, double cos135, double cos150, double cos180, double cos210, double cos225, double cos240, double cos270, double cos300, double cos315, double cos330, double cos360) {
+        this.cos0 = cos0;
+        this.cos30 = cos30;
+        this.cos45 = cos45;
+        this.cos60 = cos60;
+        this.cos90 = cos90;
+        this.cos120 = cos120;
+        this.cos135 = cos135;
+        this.cos150 = cos150;
+        this.cos180 = cos180;
+        this.cos210 = cos210;
+        this.cos225 = cos225;
+        this.cos240 = cos240;
+        this.cos270 = cos270;
+        this.cos300 = cos300;
+        this.cos315 = cos315;
+        this.cos330 = cos330;
+        this.cos360 = cos360;
+        cos0 = 2 * PI;
+        cos30 = PI / 6;
+        cos45 = PI / 4;
+        cos60 = PI / 3;
+        cos90 = PI / 2;
+        cos120 = (2 * PI) / 3;
+        cos135 = (3 * PI) / 4;
+        cos150 = (5 * PI) / 6;
+        cos180 = PI;
+        cos210 = (7 * PI) / 6;
+        cos225 = (5 * PI) / 4;
+        cos240 = (4 * PI) / 3;
+        cos270 = (3 * PI) / 2;
+        cos300 = (5 * PI) / 3;
+        cos315 = (7 * PI) / 4;
+        cos330 = (11 * PI) / 5;
+        cos360 = 2 * PI;
+    }
+}
