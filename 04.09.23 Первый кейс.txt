@@ -1,11 +1,11 @@
 package org.example;
 
 public class MyMath {
-    public static final double E = 2.718281828459045;
-    public static final double PI = 3.141592653589793;
+    public static final double E = 2.718281828459045; // Константа E
+    public static final double PI = 3.141592653589793; // Константа Пи
     private int b;
     private int a;
-/*
+/* Пробная попытка решения задания №2
     private double cos0;
     private double cos30;
     private double cos45;
@@ -25,24 +25,24 @@ public class MyMath {
     private double cos360;
 */
     public static void max(int a, int b) {
-        int maximum = a;
-        if (b > a) {
-            maximum = b;
+        int maximum = a; // Изначально "a" считается максимальным
+        if (b > a) {     // Если "b" будет больше чем "a" то
+            maximum = b; // максимумом будет считатся "b"
         }
         System.out.println(maximum);
     }
 
-    public static void random(final int min, final int max) {
+    public static void random(final int min, final int max) { //Тут указывается нужный нам диапазон. За это отвечает "final". 
         final int rnd = rnd(min, max);
 
         System.out.println("Cлучайное целое число: " + rnd);
     }
 
     public static int rnd(int min, int max) {
-        max -= min;
+        max -= min; // "-=" дает возможность использовать отрицательные значения. Без этого значения вылетала бы ошибка.
         return (int) (Math.random() * ++max) + min;
     }
-/*
+/* Пробная попытка решения задания №2
     public void cosinus(double cos0, double cos30, double cos45, double cos60, double cos90, double cos120, double cos135, double cos150, double cos180, double cos210, double cos225, double cos240, double cos270, double cos300, double cos315, double cos330, double cos360) {
         this.cos0 = cos0;
         this.cos30 = cos30;
