@@ -5,6 +5,7 @@ public class MyMath {
     public static final double PI = 3.141592653589793;
     private int b;
     private int a;
+/*
     private double cos0;
     private double cos30;
     private double cos45;
@@ -22,7 +23,7 @@ public class MyMath {
     private double cos315;
     private double cos330;
     private double cos360;
-
+*/
     public static void max(int a, int b) {
         int maximum = a;
         if (b > a) {
@@ -41,7 +42,7 @@ public class MyMath {
         max -= min;
         return (int) (Math.random() * ++max) + min;
     }
-
+/*
     public void cosinus(double cos0, double cos30, double cos45, double cos60, double cos90, double cos120, double cos135, double cos150, double cos180, double cos210, double cos225, double cos240, double cos270, double cos300, double cos315, double cos330, double cos360) {
         this.cos0 = cos0;
         this.cos30 = cos30;
